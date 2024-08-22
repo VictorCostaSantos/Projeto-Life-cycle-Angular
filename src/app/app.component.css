@@ -1,0 +1,109 @@
+.main {
+  background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 328px;
+  margin: 0 auto;
+}
+
+.header-lista .title-list {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+  line-height: 1; /* Ajusta o line-height */
+  display: flex; /* Adiciona flexbox diretamente no h4 */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.lista {
+  padding: 1rem;
+  width: 328px;
+  background: rgba(255, 255, 255, 0.2); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(10px); /* Desfoque do fundo */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores Webkit */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda semitransparente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    color: #000000; /* Cor do texto */
+}
+
+.lista h4 {
+  /* border-bottom: 1px solid blue; */
+  padding-bottom: 1rem;
+  color: #3AE0AE;
+  font-weight: 600;
+
+}
+
+.content {
+  display: grid;
+  grid-template-columns: .5fr 2.5fr .5fr .5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "checkbox description delete-icon edit-icon"
+    "date date date date";
+  padding: .5rem 0;
+}
+
+small {
+  font-size: .5rem;
+}
+
+.checkbox {
+  /* justify-self: start; */
+  grid-area: checkbox;
+}
+
+.description {
+  justify-self: start;
+  align-self: center;
+  grid-area: description;
+}
+
+.delete-icon {
+  justify-self: center;
+  align-self: center;
+  grid-area: delete-icon;
+}
+
+.edit-icon {
+  justify-self: center;
+  align-self: center;
+  grid-area: edit-icon;
+}
+
+.date {
+  justify-self: start;
+  grid-area: date;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.header-lista {
+  display: flex;
+  justify-content: space-between; /* Espaçamento igual entre os itens */
+  align-items: center; /* Centraliza verticalmente os itens */
+  border-bottom: 1px dashed #ff99c8; /* Corrigido o estilo da borda */
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem; /* Se necessário, adicione padding superior para melhor alinhamento */
+}
+
+
+.btn-header {
+  background-color: transparent;
+  border: 1px solid #3AE0AE;
+  padding: 5px 9px; /* Aumente o padding superior/inferior para centralizar melhor */
+  border-radius: 9px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  display: inline-flex; /* Use inline-flex para alinhar o texto dentro do botão */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
